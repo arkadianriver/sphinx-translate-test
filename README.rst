@@ -7,7 +7,7 @@ Here we have some documentation.
 Testing out Sphinx-intl by using its `quickstart guide`_
 and by using translate-po_.
 
-See the translated output of this document in ``_build/html``.
+See the translated output on `GitHub pages`_.
 
 
 To install
@@ -29,3 +29,4 @@ To run (Windows only)
 
 .. _`quickstart guide`: https://sphinx-intl.readthedocs.io/en/master/quickstart.html
 .. _translate-po: https://pypi.org/project/translate-po/
+.. _`GitHub pages`: https://arkadianriver.github.io/sphinx-translate-test/

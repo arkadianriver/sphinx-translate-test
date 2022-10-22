@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/bash
+
+set -e
 
 make html
 make gettext
@@ -14,3 +16,13 @@ for lang in ($SPHINXINTL_LANGUAGE); do
   sphinx-build -M html . out/$lang -Dlanguage=$lang
 done
 
+cat <<EOD > out/index.html
+<html><head><title>Sphinx Translate Test</title></head>
+<body><ul>
+<li><a href="en/html">en</a></li>
+<li><a href="de/html">de</a></li>
+<li><a href="ja/html">ja</a></li>
+</ul></body></html>
+EOD
+
+touch out/.nojekyll
