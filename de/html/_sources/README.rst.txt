@@ -19,12 +19,12 @@ To install
   pip install googletrans==4.0.0rc1
 
 
-To run (Windows only)
----------------------
+To run
+------
 
-::
+Run the ``run.sh`` or ``run.bat`` commands to
+extract text into PO files, translate them, and build into localized versions.
 
-  run.bat
 
 
 .. _`quickstart guide`: https://sphinx-intl.readthedocs.io/en/master/quickstart.html
