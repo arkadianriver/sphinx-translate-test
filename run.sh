@@ -1,10 +1,10 @@
 #!/usr/bin/bash
 
-set -e
+set -ex
 
 make html
 make gettext
-export SPHINXINTL_LANGUAGE=en,de,ja
+SPHINXINTL_LANGUAGE=en,de,ja
 sphinx-intl update -p _build/gettext
 mkdir translate-src
 cp -r locale translate-src/
