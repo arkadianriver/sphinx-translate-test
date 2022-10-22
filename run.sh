@@ -4,12 +4,13 @@ set -ex
 
 make html
 make gettext
-SPHINXINTL_LANGUAGE=en,de,ja sphinx-intl update -p _build/gettext
+export SPHINXINTL_LANGUAGE=en,de,ja
+sphinx-intl update -p _build/gettext
 mkdir translate-src
 cp -r locale translate-src/
 python translate.py
 
-for lang in ($SPHINXINTL_LANGUAGE); do
+for lang in ${SPHINXINTL_LANGUAGE//,/ }; do
   mkdir -p out/$lang
   sphinx-build -M html . out/$lang -Dlanguage=$lang
 done
