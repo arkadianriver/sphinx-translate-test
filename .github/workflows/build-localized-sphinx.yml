@@ -22,8 +22,8 @@ jobs:
 
       - name: Install Python dependencies ⬇️
         run: |
-          pip install sphinx sphinx-intl translate-po
-          pip install googletrans==4.0.0rc1
+          pip install sphinx sphinx-intl
+          pip install git+https://github.com/arkadianriver/translate-po.git@recursive-src-dest#egg=translate-po
 
       - name: Build and Translate 🔧
         run: ./run.sh
