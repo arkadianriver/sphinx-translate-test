@@ -24,6 +24,7 @@ jobs:
         run: |
           pip install -U setuptools
           pip install sphinx sphinx-intl
+          pip install googletrans==4.0.0rc1
           pip install git+https://github.com/arkadianriver/translate-po.git@recursive-carryon#egg=translate-po
 
       - name: Build and Translate 🔧
