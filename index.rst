@@ -10,3 +10,6 @@ Welcome!
    :maxdepth: 2
 
    README
+   content/file1
+   content/subdir/file2
+   content/subdir/file3
