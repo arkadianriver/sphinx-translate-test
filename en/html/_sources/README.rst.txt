@@ -9,18 +9,11 @@ and by using translate-po_.
 
 See the translated output on `GitHub pages`_.
 
-
-To install
-----------
-
 ::
 
-  pip install sphinx sphinx-intl translate-po
-  pip install googletrans==4.0.0rc1
+  pip install sphinx sphinx-intl
+  pip install git+https://github.com/arkadianriver/translate-po.git@recursive-src-dest#egg=translate-po
 
-
-To run
-------
 
 Run the ``run.sh`` or ``run.bat`` commands to
 extract text into PO files, translate them, and build into localized versions.
