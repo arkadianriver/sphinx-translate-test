@@ -12,7 +12,8 @@ See the translated output on `GitHub pages`_.
 ::
 
   pip install sphinx sphinx-intl
-  pip install git+https://github.com/arkadianriver/translate-po.git@recursive-src-dest#egg=translate-po
+  pip install googletrans==4.0.0rc1
+  pip install git+https://github.com/arkadianriver/translate-po.git@recursive-carryon#egg=translate-po
 
 
 Run the ``run.sh`` or ``run.bat`` commands to
