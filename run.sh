@@ -6,6 +6,7 @@ make html
 make gettext
 export SPHINXINTL_LANGUAGE=en,de,ja
 sphinx-intl update -p _build/gettext
+[ -d translate-src ] && rm -r translate-src
 mkdir translate-src
 cp -r locale translate-src/
 python translate.py
